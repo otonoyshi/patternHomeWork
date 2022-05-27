@@ -1,6 +1,6 @@
 package ru.pattern;
 
-public class PersonBilder {
+public class PersonBilder implements IPersonBilder {
 
     private String name;
     private String surname;
@@ -32,7 +32,7 @@ public class PersonBilder {
 
 
 
-
+    @Override
     public Person build(){
         if (name != null && surname != null && age != 0){
                 return new Person(name,surname,age);

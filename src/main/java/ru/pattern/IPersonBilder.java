@@ -1,5 +1,5 @@
 package ru.pattern;
 
-public interface PersonBuilder {
+public interface IPersonBilder {
     Person build();
 }
